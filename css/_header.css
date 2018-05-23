@@ -1,0 +1,16 @@
+header {
+  background-color: var(--header-button);
+  height: 5rem;
+  width: 100%;
+}
+
+h1,
+h2,
+button {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+
+h2 {
+  font-weight: 600;
+}

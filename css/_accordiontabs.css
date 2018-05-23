@@ -1,0 +1,79 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.accordion-tabs {
+  width: 80vw;
+  height: 80rem;
+  margin: auto;
+}
+
+.accordion-tabs .tab {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-tabs {
+  border: 1px solid #dcdcdc;
+}
+
+p {
+  margin: none;
+  width: 75%;
+}
+
+
+.accordion-tabs .tab-content {
+  display: none;
+  padding: 1rem;
+  width: 100%;
+}
+
+.tab-content {
+  width: 50vw;
+}
+
+button {
+  width: 10rem;
+  height: 3rem;
+  background-color: black;
+  margin: 1rem auto;
+}
+@media screen and (min-width: 600px) {
+  .accordion-tabs .tab {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .tab-content {
+    display: none;
+    padding: 1rem;
+    width: 100%;
+  }
+}
+
+.tab-anchor {
+  border-top: 1px solid #dcdcdc;
+  color: #333;
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  border: 1px solid #dcdcdc;
+  border-bottom-color: #fff;
+  margin-bottom: -1px;
+  background-color: #EBEBEB;
+  }
+
+  .accordion-tabs .tab-anchor.active {
+    border: 1px solid #dcdcdc;
+    border-bottom-color: #fff;
+    margin-bottom: -1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #fff;
+  }
+}
