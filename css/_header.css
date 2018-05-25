@@ -2,6 +2,9 @@ header {
   background-color: var(--header-button);
   height: 5rem;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 h1,
@@ -13,4 +16,17 @@ button {
 
 h2 {
   font-weight: 600;
+}
+
+.pattrn {
+  margin: 2rem;
+  font-size: 3rem;
+}
+
+.party {
+  color: #34d1d1;
+}
+
+.steven {
+  margin-right: 1rem;
 }

@@ -5,7 +5,7 @@ html {
 
 .accordion-tabs {
   width: 80vw;
-  height: 80rem;
+  height: 40rem;
   margin: auto;
 }
 
@@ -41,19 +41,6 @@ button {
   background-color: black;
   margin: 1rem auto;
 }
-@media screen and (min-width: 600px) {
-  .accordion-tabs .tab {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .tab-content {
-    display: none;
-    padding: 1rem;
-    width: 100%;
-  }
-}
 
 .tab-anchor {
   border-top: 1px solid #dcdcdc;
@@ -65,15 +52,58 @@ button {
   border-bottom-color: #fff;
   margin-bottom: -1px;
   background-color: #EBEBEB;
+}
+
+@media screen and (min-width: 910px) {
+  .accordion-tabs {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-template-rows: 25% 25% 25% 25%; */
   }
 
-  .accordion-tabs .tab-anchor.active {
+
+  .tab-content {
+    display: none;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .tab-content .open {
+    background-color: green;
+  }
+
+
+  .tab-anchor.active {
+
     border: 1px solid #dcdcdc;
     border-bottom-color: #fff;
     margin-bottom: -1px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     background-color: #fff;
+  }
+
+  .first {
+    width: 291%;
+    margin-left: 22rem;
+  }
+
+  .second {
+    width: 302%;
+    margin-left: -5rem;
+  }
+
+  .third {
+    width: 290%;
+    margin-left: -33rem;
+  }
+
+  .fourth {
+    width: 292%;
+    margin-left: -63rem;
+  }
+
+  .accord {
+    position: absolute;
+    top: 99px;
+    left: 162px;
   }
 }
