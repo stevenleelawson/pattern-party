@@ -3,6 +3,9 @@ html {
   font-size: 10px;
 }
 
+.accord-divide {
+  margin: 5rem;
+}
 .accordion-tabs {
   width: 80vw;
   height: 40rem;
@@ -33,13 +36,6 @@ p {
 
 .tab-content {
   width: 50vw;
-}
-
-button {
-  width: 10rem;
-  height: 3rem;
-  background-color: black;
-  margin: 1rem auto;
 }
 
 .tab-anchor {
@@ -103,7 +99,7 @@ button {
 
   .accord {
     position: absolute;
-    top: 99px;
+    top: 220px;
     left: 162px;
   }
 }

@@ -4,4 +4,31 @@
 body {
   font-size: 16px;
   --header-button: #2f2235;
+  --borders: #D1D2D3;
+  font-family: 'Open Sans', sans-serif;
+
   }
+
+.divider {
+  width: 60%;
+  margin: 1rem;
+}
+
+.divider-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+
+button {
+  width: 10rem;
+  height: 3rem;
+  background-color: var(--header-button);
+  margin: auto;
+}
