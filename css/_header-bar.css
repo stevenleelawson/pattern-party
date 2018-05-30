@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-top: 2rem;
 }
 
 li {
@@ -11,8 +12,19 @@ li {
  transition-duration: 0.5s;
 }
 
+ul {
+
+  text-decoration: none;
+}
 li:hover {
   cursor: pointer;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
 }
 
 ul li ul {
@@ -32,15 +44,10 @@ ul li ul:hover {
   display: block;
 }
 
-ul li ul li {
-  clear: both;
-  width: 100%;
-}
-/* .menu .drop-down:hover {
-  display: unset;
-}
-.drop-down {
-  display: none;
+.li_menu {
+  font-size: 2rem;
+  margin: 2rem;
+  padding-top: 1.5rem;
 }
 
 .li_wireframe {
@@ -49,43 +56,73 @@ ul li ul li {
   height: 5rem;
   width: 5rem;
   border-radius: 100%;
-}
-
-.master-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100vw;
-} */
-
-
-/* li {
- display: block;
- transition-duration: 0.5s;
-}
-
-li:hover {
-  cursor: pointer;
-}
-
-ul li ul {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  left: 0;
-  display: none;
-}
-
-ul li:hover > ul,
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
+  margin: 2rem;
 }
 
 ul li ul li {
   clear: both;
   width: 100%;
-} */
+}
+
+.drop-menu {
+  height: 50px;
+  background-color: #f2f2f2;
+  margin:0;
+  width: 100vw;
+}
+
+.dropdown {
+  margin-top: 40px;
+}
+
+.nav_input {
+  padding: 10px 10px;
+  line-height: 10px;
+  width: 200px;
+  font-size: 2rem;
+  background-image: url('search.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+input::placeholder {
+  padding-left: 1.7rem;
+}
+
+.search-icon {
+  height: 1rem;
+  position: absolute;
+  top: 7px;
+}
+
+@media screen and (min-width: 910px) {
+  .dropdown {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    position: absolute;
+    top: 1830px;
+    left: 400px;
+  }
+
+  ul li ul {
+    visibility: visible;
+    opacity: 100;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    display: unset;
+    background-color: var(--borders);
+  }
+
+  .drop-menu {
+    height: 50px;
+    background-color: #D1D2D3;
+    margin:0;
+    width: 14vw;
+    display: inline-block;
+  }
+
+  .nav_input {
+    height: 3rem;
+
+  }
+}
